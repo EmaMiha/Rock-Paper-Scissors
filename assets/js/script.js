@@ -3,9 +3,9 @@ const choices = ["rock", "paper", "scissors"];
 const messages = document.getElementById("messages");
 const buttons = document.getElementsByName("check");
 const playerScore = document.getElementById("player-score");
-const computerScore = document.document.getElementById("computer-score");
-const playerImage = document.document.getElementById("player-image");
-const computerImage = document.document.getElementById("computer-image");
+const computerScore = document.getElementById("computer-score");
+const playerImage = document.getElementById("player-image");
+const computerImage = document.getElementById("computer-image");
 
 // Get the button elements and add event listeners 
 
@@ -22,6 +22,12 @@ function playGame(playerChoice) {
     playerImage.src = `assets/images/${choices[playerChoice]}.png`;
     playerImage.alt = choices[playerChoice];
 
-    let result = checkWinner(choices [computerchoice], choices[playerChoice]);
+    let computerChoice = Math.floor(math.random()*3);
+
+    computerImage.src = `assets/images/${choices [computerChoice]}.png`;
+    computerImage.alt = choices[computerChoice];
+
+    let result = checkWinner(choices [computerChoice], choices[playerChoice]);
     updateScores(result);
 }
+
