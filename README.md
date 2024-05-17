@@ -1,4 +1,4 @@
 # Rock-Paper-Scissors
 
-![game](game.png)
+![game](/assets/images/game.png)
 
